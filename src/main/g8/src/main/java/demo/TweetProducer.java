@@ -1,6 +1,6 @@
 package demo;
 
-import Twitter.TwitterFeeds;
+import twitter.TwitterFeeds;
 import twitter4j.TwitterException;
 
 import java.io.IOException;
