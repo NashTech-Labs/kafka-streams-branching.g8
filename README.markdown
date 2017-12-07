@@ -8,13 +8,13 @@ Kafka KStream Branching
 
 Step 1: Download Kafka
 
-Download Kafka from [here](https://www.apache.org/dyn/closer.cgi?path=/kafka/0.10.1.1/kafka_2.11-0.10.1.1.tgz)
+Download Kafka from [here](http://www-eu.apache.org/dist/kafka/1.0.0/kafka_2.11-1.0.0.tgz)
 
 Step 2: Extract downloaded file
 
 ```bash
-tar -xzvf kafka_2.11-0.10.1.1.tgz
-cd kafka_2.11-0.10.1.1
+tar -xzvf kafka_2.11-1.0.0.tgz
+cd kafka_2.11-1.0.0
 ```
 ### Steps to start Zookeeper and Kafka server :
 
@@ -35,9 +35,9 @@ bin/kafka-server-start.sh config/server.properties
 ### Clone Project
 
 ```bash
-git clone git@github.com:knoldus/activator-stateful-kstream-kafka.git
-cd activator-kstream-kafka
-bin/activator clean compile
+sbt new knoldus/kafka-streams-branching.g8
+cd kafka-streams-branching
+sbt clean compile
 ```
 ---
 ### Producing tweets from your twitter account into Kafka topic
@@ -67,7 +67,7 @@ different output topics.
 
 
 ---
-For any issue please raise a ticket @ [Github Issue](https://github.com/knoldus/kafka-stateless-kstream/issues)
+For any issue please raise a ticket @ [Github Issue](https://github.com/knoldus/kafka-streams-branching.g8/issues)
 
 Template license
 ----------------
